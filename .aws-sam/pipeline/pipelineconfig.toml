@@ -1,0 +1,18 @@
+version = 0.1
+[default.pipeline_bootstrap.parameters]
+pipeline_user = "arn:aws:iam::758164365741:user/aws-sam-cli-managed-Stage-the-First-pi-PipelineUser-8j9jjIrXuXRG"
+permissions_provider = "AWS IAM"
+
+["Stage the First".pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::758164365741:role/aws-sam-cli-managed-Stage-the-PipelineExecutionRole-b2Ly5lE6ef7A"
+cloudformation_execution_role = "arn:aws:iam::758164365741:role/aws-sam-cli-managed-Stage-CloudFormationExecutionRo-EmK74VXxCbr5"
+artifacts_bucket = "aws-sam-cli-managed-stage-the-firs-artifactsbucket-wnuniryxkpwo"
+image_repository = ""
+region = "us-east-1"
+
+["Staeg the Second".pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::758164365741:role/aws-sam-cli-managed-Staeg-the-PipelineExecutionRole-BRCQ5uNUYaa9"
+cloudformation_execution_role = "arn:aws:iam::758164365741:role/aws-sam-cli-managed-Staeg-CloudFormationExecutionRo-ytOYnqlAlhGj"
+artifacts_bucket = "aws-sam-cli-managed-staeg-the-seco-artifactsbucket-fedmi20rfqmg"
+image_repository = ""
+region = "us-east-1"
